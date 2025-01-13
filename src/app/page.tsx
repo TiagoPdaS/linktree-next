@@ -1,101 +1,86 @@
-import Image from "next/image";
+import { FaCss3, FaGithub, FaHtml5, FaInstagram, FaJs, FaLinkedin, FaReact } from "react-icons/fa";
+import { SiBootstrap, SiNextdotjs, SiSass, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
-export default function Home() {
+const page = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="w-screen h-screen">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+      <figure className="md:flex rounded-xl p-8 md:pr-64  ">
+        <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none  mx-auto" src="../img/bg-img.png" alt="" />
+
+        <div className="pt-6 md:p-8 text-center md:text-center">
+
+          <p className="text-lg font-bold">
+            “Front-end Developer |<br />
+            Transformando designs em soluções modernas.”
+          </p>
+
+          <figcaption className="font-medium">
+            <div className="text-sky-600 dark:text-sky-400">
+              <h1 className="text-2xl">Tiago PdaS</h1>
+            </div>
+            <div className="text-slate-700 dark:text-slate-500 text-lg font-medium">
+              Me siga nas redes abaixo!
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+
+
+      {/* buttons */}
+      <div className=" p-12">
+        <div>
+          <a href="https://www.instagram.com/tiagopdas/" target="_blank">
+          <button className="w-full flex items-center justify-center gap-2 p-2 rounded-md text-lg font-bold text-white border-none bg-yellow-500">
+            <FaInstagram className="w-6 h-6" />
+            INSTAGRAM
+          </button>
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <div>
+        <a href="https://github.com/TiagoPdaS" target="_blank">
+          <button className="w-full mt-6 flex items-center justify-center gap-2 p-2 rounded-md text-lg font-bold text-white border-none bg-yellow-500">
+            <FaGithub className="w-6 h-6" />
+            GITHUB
+          </button>
+          </a>
+        </div>
+        
+        <div>
+        <a href="https://www.linkedin.com/in/tiagopdas/" target="_blank">
+          <button className="w-full mt-6 flex items-center justify-center gap-2 p-2 rounded-md text-lg font-bold text-white border-none bg-yellow-500">
+            <FaLinkedin className="w-6 h-6" />
+            LINKEDIN
+          </button>
+          </a>
+        </div>
+      </div>
+
+      <div className="flex justify-center items-center">
+      <FaHtml5 className="w-6 h-6 mr-1 text-orange-400 inline" />
+      <FaCss3 className="w-6 h-6 mr-1 text-blue-400 inline" />
+      <FaJs className="w-6 h-6 mr-1 text-yellow-400 inline" />
+      <SiTypescript className="w-6 h-6 mr-1 text-blue-500 inline" />
+      <FaReact className="w-6 h-6 mr-1 text-blue-300 inline" />
+      <SiNextdotjs className="w-6 h-6 mr-1 text-black-400 inline" />
+      <SiTailwindcss className="w-6 h-6 mr-1 text-blue-400 inline" />
+      <SiBootstrap className="w-6 h-6 mr-1 text-purple-600 inline" />
+      <SiSass className="w-6 h-6 mr-1 text-pink-400 inline" />
+      <FaGithub className="w-6 h-6 mr-1 text-black-400 inline" />
+      <VscVscode className="w-6 h-6 mr-1 text-blue-400 inline"/>
+      </div>
+
+    <div>
+      <footer className="flex justify-center items-center pt-4">
+      <h6 className="font-bold">© 2025 TiagoPdaS. Todos os direitos reservados.</h6> 
       </footer>
     </div>
-  );
+
+    </div>
+
+
+  )
 }
+
+export default page;
