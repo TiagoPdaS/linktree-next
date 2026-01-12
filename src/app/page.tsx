@@ -63,7 +63,7 @@ const page = () => {
         </div>
       </main>
       <footer className="w-full flex flex-col items-center py-6 mt-8 border-t border-gray-200 dark:border-gray-700">
-        <span className="text-xs text-gray-500 dark:text-gray-400">© 2025 TiagoPdaS. Todos os direitos reservados.</span>
+        <span className="text-xs text-gray-500 dark:text-gray-400">© 2026 TiagoPdaS. Todos os direitos reservados.</span>
       </footer>
     </div>
   );
