@@ -1,6 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-![linktree](https://github.com/user-attachments/assets/b7f0501b-34d5-4787-8b9d-2ec3b99e4bed)
+<img
+  width="700"
+  alt="Linktree – versão desktop"
+  src="https://github.com/user-attachments/assets/1de2f3b0-75df-4d6b-9671-29b1ae6f0629"
+/>
 
 
 ## Getting Started
