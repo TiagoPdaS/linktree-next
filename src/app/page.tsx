@@ -38,7 +38,7 @@ const page = () => {
           <a href="https://tiagopdas.netlify.app/" target="_blank" rel="noopener noreferrer">
             <button className="w-full flex items-center justify-center gap-3 py-3 rounded-xl text-lg font-semibold text-white shadow-md hover:scale-105 transition-all duration-200" style={{ backgroundColor: '#4B2C8A' }}>
               {/* Ícone opcional para o site pessoal */}
-                <FaGlobe className="w-6 h-6" /> Meu Site
+                <FaGlobe className="w-6 h-6" /> meu WebSite
             </button>
           </a>
 
